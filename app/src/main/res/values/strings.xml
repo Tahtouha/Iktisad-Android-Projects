@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Iktisad</string>
+    <string name="maptxt">This shows map</string>
+    <string name="list">list</string>
+    <string name="map">map</string>
+    <string name="listItem">List</string>
+    <string name="login">LogIn</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="marchandCheck">je suis un marchand</string>
+    <string name="checkPassword">verfier mot de passe</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string name="ajouter_produit">Ajouter Produit</string>
+    <string name="ma_boutique">Ma boutique</string>
+    <string name="magasin">Magasin</string>
+    <string name="produits">Produits</string>
+    <string name="marque_du_produit">Marque du produit</string>
+    <string name="type">Type</string>
+    <string name="quantit">quantité</string>
+    <string name="jours_restant_avant_la_peremption">jours restant avant la peremption</string>
+    <string name="s_inscrire">S\'inscrire</string>
+    <string name="poster_en_tant_que_don">Poster en tant que don</string>
+    <string name="prix_unitaire">Prix unitaire</string>
+    <string name="money"> DA</string>
+    <string name="je_suis_un_marchand">Je suis un marchand</string>
+    <string name="modifier_profil">Modifier Profil</string>
+    <string name="mot_de_passe">mot de passe</string>
+    <string name="adress">adress</string>
+    <string name="adress_mail">Adress mail</string>
+    <string name="num_ro_de_t_l_phone">numéro de téléphone</string>
+    <string name="resterCo">Rester connecté</string>
+</resources>

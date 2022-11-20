@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profilModif"
+    >
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/passwordModif"
+    android:layout_width="wrap_content"
+    android:hint="@string/mot_de_passe"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="40dp"
+    app:hintTextAppearance="@style/MyHintStyle"
+
+    >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/adressModif"
+        android:layout_width="wrap_content"
+        android:hint="@string/adress"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordModif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mailModif"
+        android:layout_width="wrap_content"
+        android:hint="@string/adress_mail"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adressModif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numModif"
+        android:layout_width="wrap_content"
+        android:hint="@string/num_ro_de_t_l_phone"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mailModif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/EnregistrerModif"
+        android:text="Enregistrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_btn"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

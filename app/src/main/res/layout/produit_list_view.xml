@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    card_view:cardElevation="5dp">
+
+
+ <RelativeLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="5dp"
+     android:padding="15dp">
+
+   <LinearLayout
+       android:id="@+id/linType"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="8dp">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Type: "
+         android:textSize="15sp"
+         />
+
+     <TextView
+         android:id="@+id/typeProduit"
+         android:text="Lait"
+         android:textSize="15sp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textStyle="bold"
+         />
+   </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/linQuant"
+       android:layout_below="@+id/linType"
+       android:layout_width="wrap_content"
+       android:layout_marginBottom="8dp"
+       android:layout_height="wrap_content">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Quantité: "
+         android:textSize="15sp"
+         />
+
+     <TextView
+         android:id="@+id/quantity"
+         android:text="12"
+         android:textSize="15sp"
+         android:textStyle="bold"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+   </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/linJours"
+       android:layout_marginBottom="8dp"
+       android:layout_below="@+id/linQuant"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Jours restants: "
+         android:textSize="15sp"
+         />
+
+     <TextView
+         android:id="@+id/joursRestants"
+         android:text="14"
+         android:textSize="15sp"
+         android:textStyle="bold"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+   </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/linMarque"
+       android:layout_marginBottom="8dp"
+       android:layout_below="@+id/linJours"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Marque: "
+         android:textSize="15sp"
+         />
+
+     <TextView
+         android:id="@+id/marqueProd"
+         android:text="Candia"
+         android:textSize="15sp"
+         android:textStyle="bold"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+   </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/linPrix"
+       android:layout_marginBottom="8dp"
+       android:layout_below="@+id/linMarque"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Prix unitaire: "
+         android:textSize="15sp"
+         />
+
+     <TextView
+         android:id="@+id/prixProd"
+         android:text="1700"
+         android:textSize="15sp"
+         android:textStyle="bold"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+   </LinearLayout>
+
+
+ </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

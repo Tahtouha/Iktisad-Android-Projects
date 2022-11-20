@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#F3F3F3"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/dispName"
+                android:text="Taha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                />
+            <Button
+                android:id="@+id/modifierProfil"
+                android:padding="15dp"
+                android:text="Modifier"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_edit_24"
+                android:layout_toRightOf="@+id/dispName"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:background="@drawable/custom_btn"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/ajouterProduit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ajouter_produit"
+        android:textAllCaps="false"
+        android:drawableStart="@drawable/ajouter"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_btn"
+        android:padding="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerModifier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="60dp"/>
+
+</LinearLayout>

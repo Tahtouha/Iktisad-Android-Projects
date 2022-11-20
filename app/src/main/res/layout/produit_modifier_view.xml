@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="18dp">
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/productInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+      <LinearLayout
+          android:id="@+id/linType"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type: "
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/modifType"
+            android:text="HELLO"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"/>
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/linQuant"
+          android:layout_below="@+id/linType"
+          android:layout_width="wrap_content"
+          android:layout_marginBottom="8dp"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantité: "
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/modifQuant"
+            android:text="HELLO"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/linJours"
+          android:layout_marginBottom="8dp"
+          android:layout_below="@+id/linQuant"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jours restants: "
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/modifJours"
+            android:text="HELLO"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/linMarque"
+          android:layout_marginBottom="8dp"
+          android:layout_below="@+id/linJours"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marque: "
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/modifMarque"
+            android:text="HELLO"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:id="@+id/linPrix"
+          android:layout_marginBottom="8dp"
+          android:layout_below="@+id/linMarque"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prix unitaire: "
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/modifPrix"
+            android:text="HELLO"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+      </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/modifSupp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:layout_centerVertical="true"
+        >
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/modif"
+          android:src="@drawable/ic_baseline_edit_24"
+          android:backgroundTint="#41ba7a"
+          android:layout_width="wrap_content"
+
+          app:fabSize="normal"
+          app:borderWidth="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="25dp"
+          />
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/supp"
+          android:backgroundTint="#41ba7a"
+          android:src="@drawable/delete"
+          android:textSize="12sp"
+          android:outlineAmbientShadowColor="@color/white"
+          app:borderWidth="0dp"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          />
+
+    </LinearLayout>
+   </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
